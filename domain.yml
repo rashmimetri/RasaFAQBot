@@ -1,0 +1,360 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- bot_challenge
+- Thankyou
+- NoUtters
+- LeaveApplication
+- LeaveCancellation
+- LeaveType
+- CompOff
+- LeavesPerYear
+- LeavesCarryForward
+- LeavesNotavailed
+- MiddleMonthEmployeeLeave
+- LeaveApprovalPending
+- NoticePeriodLeave
+- WaiveNoticePeriod
+- MaternityLeave
+- DocumentsMaternityLeave
+- PostMaternity
+- PregnancyLeaves
+- PaternityLeave
+- AnnualCalendar
+- FloatingHolidayIntro
+- FloatingHolidayAccess
+- FloatingHolidayApproval
+- FloatingHolidayChange
+- FloatingHolidayCarryForward
+- FloatingHolidayMid
+- FloatingHolidayAvail
+- ApplyForDocument
+- LetterType
+- ContractExtension
+- BankAccountLetter
+- ResignationProcess
+- RelievingDocument
+- DailyTimeSheet
+- AttendanceRegularization
+- TransportEligibility
+- TransportForShift
+- TransportForWeekend
+- TransportSubscription
+- TransportUnsubscription
+- TransportSubscriptionValidity
+- NewJoinerSubscription
+- TransportCharge
+- TransportResign
+- TransportChangeLocation
+- TransportRoutes
+- TransportAddressChange
+- TransportLateEvening
+- TransportOwnTransport
+- TransportTiming
+- PregancyLeaves
+responses:
+  utter_greet:
+  - text: Hello there!
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_deny:
+  - text: I am sorry! Could you tell me what you looking for?
+  utter_bot_challenge:
+  - text: I am your org bot, I am here to help you with your queries.
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_Thanks:
+  - text: Hope you got the answer you were looking for, See you!
+  utter_Thanks1:
+  - text: i am glad i could help!
+  utter_Thanks2:
+  - text: Always happy to help!
+  utter_LeaveApplication:
+  - text: 'Please follow the below path: My Sphere >> Absence Management (Tile) >>
+      New Absence >>  Select the leave type from (Paid Leave, Compensatory Leave,
+      Sabbatical Leave (Other leave type is available) Select the leave type and select
+      the start and end date using brush which appear over the date change >> Submit'
+  utter_LeaveCancellation:
+  - text: If the leaves are not approved by manager than employee can cancel the leave
+      by clicking the leave transaction shown under the leave calendar and click on
+      cancel. It will not go for approval. If the leave are approved then employees
+      has to cancel the request and it will be routed to manager approval <br> My
+      Sphere>> Absence Management/Time Off >> Leave transactions >> Cancel
+  utter_LeaveType:
+  - text: 'To check the leave type configured in system <br> My Sphere >> Absence
+      Management/Time Off >> Leave type <br>  For more details refer leave policy
+      in converge. Please use the below path to refer these policy. Converge >> People
+      Policies '
+  utter_CompOff:
+  - text: 'There are two part to avail comp off.<br>  First getting approved comp
+      off balance.Employee has to apply for earning comp off for any non-working day
+      and weekend. This has to be applied within 15 from the day of working. <br>
+      Once approved by manager, the comp-off balance will be added to the comp off
+      tab under absence management.<br> Path to credit comp off balance: Mysphere
+      >> Comp Off Request >> Enter details<br> Path to avail comp off balance: My
+      Sphere >> Absence Management (Tile) >> New Absence >> Time Type>>Select Compensatory
+      Off '
+  utter_LeavesPerYear:
+  - text: All employees are eligible for 24 days of Paid Leave (PL) in a year for
+      every completed year of service. 2 of PL will be credited for every completed
+      month of service, to an employee’s leave account.
+  utter_LeavesCarryForward:
+  - text: Un availed Paid Leaves from the current year can be carried forward to the
+      next year up to a maximum of 12 days. PL over and above 12 days will lapse by
+      end of March every year.
+  utter_LeavesNotavailed:
+  - text: All accumulated leave over and above 48 days will be encashed at the end
+      of leave cycle i.e. May/June, every year. Leave encashment computation is done
+      on the Basic salary value prevalent in that financial year.
+  utter_MiddleMonthEmployeeLeave:
+  - text: If an employee joins in-between the month then the paid leave credit for
+      that particular month will be on a pro-rated basis and will be credited on the
+      midnight of the last working day of the month.
+  utter_LeaveApprovalPending:
+  - text: Any leave availed without approval from manager will be treated as leave
+      without pay.
+  utter_NoticePeriodLeave:
+  - text: Leave cannot be availed during notice period, however, in case of emergency
+      leave can be availed with the prior approval from the Reporting Manager and
+      intimation to respective BU HR team member
+  utter_WaiveNoticePeriod:
+  - text: No, you cannot use paid leaves to waive of the notice period. PL at credit
+      will be encashed at the time of retirement or during end of the services in
+      the company but cannot be used to waive of the notice period.
+  utter_MaternityLeave:
+  - text: Women employees who have completed a minimum of 80 days of continuous service
+      in the company, are eligible for Maternity Leave. Women employees on payroll
+      can avail a maximum of 26 Weeks of paid Maternity Leave out of which maximum
+      of 8 weeks can be availed pre-delivery and the rest post-delivery. Please note
+      that 26 weeks of maternity leave is inclusive of 8 weeks of leave availed pre-delivery.
+  utter_DocumentsMaternityLeave:
+  - text: Before availing any type of maternity leave you should submit the proof
+      accordingly and also provide a leave notice. Please contact your BU-HR for further
+      details.
+  utter_PostMaternity:
+  - text: Women employees can avail 27 weeks of ML Extension as an additional benefit
+      post the 26 weeks of Paid Maternity Leave. This additional benefit can be availed
+      as a combination of Paid leave (if there are available Paid Leave balance of
+      employee), Leave without pay, Work from Home or Part-Time work. Sabbatical leave
+      shall not be availed as option under this additional benefit.
+  utter_PregnancyLeaves:
+  - text: Miscarriage, Maternity Leave Illness,Tubectomy,Adoption
+  utter_PaternityLeave:
+  - text: Male employees are eligible for Paternity leave. Paternity leave can be
+      availed on birth of child or during adoption. Paternity leave is provided for
+      a period of 5 days in continuous that includes intervening holidays and weekly
+      off. A male employee can avail this leave within 30 days of birth / adoption
+      of the child and only twice in his tenure in the Company.
+  utter_AnnualCalendar:
+  - text: Go to Converge >> My Apps >> Quick Links >> Holiday List
+  utter_FloatingHolidayIntro:
+  - text: 'A floating holiday is a paid holiday which is part of your 11 annual holidays.
+      Annual holidays include 08 fixed holidays (compulsory and fixed) and 03 floating
+      holidays. However, unlike a fixed holiday, 03 floating holidays can be selected
+      at your discretion from a predefined list of 06 holidays.  '
+  utter_FloatingHolidayAccess:
+  - text: 'All employees of in India are eligible for a floating holiday.  '
+  utter_FloatingHolidayApproval:
+  - text: 'You can select the floating holidays at your discretion and it will be
+      auto-approved. Your manager need not approve the same.  '
+  utter_FloatingHolidayChange:
+  - text: 'Once you select the 03 floating holidays out of 06, it will be auto-approved
+      and cannot be changed.  '
+  utter_FloatingHolidayCarryForward:
+  - text: 'Floating holidays do not carry over to the next year and they lapse if
+      not used. Floating holidays get fixed based on your selection and has to be
+      availed on that day. '
+  utter_FloatingHolidayMid:
+  - text: "For those who join us post January 1, 2020, below is the rationale for\
+      \ selecting floating holidays. The same is applicable to employees traveling\
+      \ from onsite to offshore. <br>o\t Employees joining in Q1 (Jan, Feb, Mar) can\
+      \ select 03 floating holidays. <br>o\t Employees joining in Q2 & Q3 (Apr, May,\
+      \ Jun, Jul, Aug, Sep) can select 02 floating holidays. <br>o\t Employees joining\
+      \ in Q4 (Oct, Nov, Dec) can select 01 floating holiday. "
+  utter_FloatingHolidayAvail:
+  - text: 'Go to Mysphere >> Absence Management >> Create New Absence >> Under ‘Time
+      Type’ <br> select ‘Public/ Floating Holiday’ >> Refer the 2020 holiday calendar
+      for the floating holiday list and select the date of the holiday you want to
+      avail >> Submit  '
+  utter_ApplyForDocument:
+  - text: Employee has option of downloading from Mysphere directly using document
+      generation option. <br> My Sphere >> Home (Dropdown) >>  My Employee File >>
+      Actions Generate document >> Select the template <br><br> From Mysphere “address
+      proof letter, office address proof and employment letter” can be downloaded
+      and for other letters service request to be raised in Sapphire 
+      Sapphire</a>
+  utter_LetterType:
+  - text: Address Proof Letter, deputation letter, designation change, detailed experience
+      letter, Joining confirmation letter
+  utter_ContractExtension:
+  - text: Once your project manager has approved your contract extension, the talent
+      management will inform HRO to extend the contract in the system and HRO will
+      issue contract extension letter. HR Operation team will issue letter, you can
+      raise a service request in Sapphire  to get a letter.
+  utter_BankAccountLetter:
+  - text: For opening bank account if you need employment and address related letter
+      login to My Sphere and follow the below path for downloading the letter <br>
+      My Sphere >> Home (Dropdown) >> My Employee File >> Actions >> Generate document
+      Select the template For any specific letter you raise request in Sapphire and
+      HR operation team will issue the letter.
+  utter_ResignationProcess:
+  - text: 'In case employees want to discontinue their services. Then they
+      can submit their resignation in My Sphere<br> For P3 and below Grade: Employee
+      can submit their resignation by following the below path. MySphere>> Home (Dropdown)
+      >> “The Employee File” >> “Actions” >> “Separation”. It will trigger a workflow
+      for getting approval from L1 Manager >> L2 Manager >> HRBP <br> For P4 and above
+      grade MySphere>> Home (Dropdown) >> “The Employee File” >> “Separation Request”
+      (Available in employee file page It will trigger a workflow for getting approval
+      from L1 Manager >> HRBP'
+  utter_RelievingDocument:
+  - text: Once your resignation is accepted and all the clearance from each department
+      are in place, HR operation team will release your relieving document on your
+      last working day.
+  utter_DailyTimeSheet:
+  - text: You can apply for timesheet using the below links <br> <br>Intranet Users
+      - Click here
+      Internet Users- Click here
+  utter_AttendanceRegularization:
+  - text: 'Go to MySphere and select Panel called “Attendance Reg. / Time Sheet”.
+      <br>  Click on “Make Amendment” and Select the reason from the dropdown, provide
+      the duration & Submit  '
+  utter_TransportEligibility:
+  - text: Bus services will be offered to all employees at Bangalore.
+  utter_TransportForShift:
+  - text: Bus service will not be available for employee coming in shift and will
+      continue to use shift cab for commuting.
+  utter_TransportForWeekend:
+  - text: Bus will not be available on weekends and holidays, has to be pre roosted
+      and informed to Transport team or you can use the public transport service and
+      claim for reimbursement.
+  utter_TransportSubscription:
+  - text: You can subscribe for the service on Converge (Our internal tool) Converge
+      >> Our New campus >> Transport. You can subscribe for the service at any point
+      of time but once you subscribe you will not be able to opt out for a minimum
+      of 6 months.
+  utter_TransportUnsubscription:
+  - text: You can unsubscribe for the service on Converge (Our internal tool) Converge
+      >> Our New campus >> Transport. Once you subscribe for the service you will
+      not be able to unsubscribe for a minimum of 6 months. You can unsubscribe only
+      after completion of 6 Months from the date of subscription.
+  utter_TransportSubscriptionValidity:
+  - text: Your subscription is valid only for 6 months and you have to re-subscribe
+      after expire of your subscription.
+  utter_NewJoinerSubscription:
+  - text: If you are a new joiner, you will have to subscribe for the service on day
+      1 during your onboarding sessions. If you have moved from different location
+      you can subscribe for the service in converge Converge>Our New campus>Transport.
+  utter_TransportCharge:
+  - text: Bus transport service is provided on a subsidized rates and the rates are
+      as below which will be deducted from your monthly payout Trainee - Rs 400 per
+      month P1 & P2 - Rs 800 per month P3 and above - Rs 1600 per month Consultant/Third
+      Party contractor - Rs 800 per month <br> The charges will be pro-rated based
+      on the number of days you have worked and will not be charged for the entire
+      month.
+  utter_TransportResign:
+  - text: If you resign and get relived before end of 6 months of your subscription,
+      the charges will be pro-rated based on the number of days you have worked.
+  utter_TransportChangeLocation:
+  - text: In case you are moving to onsite/different location and using the bus for
+      less than 15 days in month, charges will be calculated as per prorate usage.
+  utter_TransportRoutes:
+  - text: Transport routes are defined and available at converge (intranet). Employees
+      are required to choose a pre-defined pick up points, based on which the transport
+      team will define the route number with pickup and drop location and time.
+  utter_TransportAddressChange:
+  - text: If you have changed your house address, you can pick a new pickup location
+      at any point provided Transport team have confirmed the change of pickup point.
+      You cannot get pickup/drop to other points or location due to security reasons
+  utter_TransportOwnTransport:
+  - text: All employees are encouraged to avail the company provided transport facilities,
+      however if an employee is not availing and/or opting out of the transport facilities
+      provided by the company, such employee will automatically acknowledge that,
+      <br> They are aware of and was offered transport facilities  for commuting to
+      and from work including late evenings and nights; <br> They have voluntarily
+      opted out of the transport facility and will be responsible for consequences
+      arising out of such employee’s decision of not availing the transport facility
+      of the company.
+  utter_TransportLateEvening:
+  - text: Go to Converge >> My Commute - Safetrax >> Choose your organization >>
+      Edit Log out time by clicking on the + sign >> Enter details and save changes
+  utter_TransportTiming:
+  - text: Once you have registered for the transport, you can check your transport
+      timings, pick up and drop location provided in Converge ->My Apps -> Transport
+      Registration
+  utter_default:
+  - text: I could not get that. Let us try something else
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_bot_challenge
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_Thanks
+- utter_Thanks1
+- utter_Thanks2
+- utter_LeaveApplication
+- utter_LeaveCancellation
+- utter_LeaveType
+- utter_CompOff
+- utter_LeavesPerYear
+- utter_LeavesCarryForward
+- utter_LeavesNotavailed
+- utter_MiddleMonthEmployeeLeave
+- utter_LeaveApprovalPending
+- utter_NoticePeriodLeave
+- utter_WaiveNoticePeriod
+- utter_MaternityLeave
+- utter_DocumentsMaternityLeave
+- utter_PostMaternity
+- utter_PregnancyLeaves
+- utter_PaternityLeave
+- utter_AnnualCalendar
+- utter_FloatingHolidayIntro
+- utter_FloatingHolidayAccess
+- utter_FloatingHolidayApproval
+- utter_FloatingHolidayChange
+- utter_FloatingHolidayCarryForward
+- utter_FloatingHolidayMid
+- utter_FloatingHolidayAvail
+- utter_ApplyForDocument
+- utter_LetterType
+- utter_ContractExtension
+- utter_BankAccountLetter
+- utter_ResignationProcess
+- utter_RelievingDocument
+- utter_DailyTimeSheet
+- utter_AttendanceRegularization
+- utter_TransportEligibility
+- utter_TransportForShift
+- utter_TransportForWeekend
+- utter_TransportSubscription
+- utter_TransportUnsubscription
+- utter_TransportSubscriptionValidity
+- utter_NewJoinerSubscription
+- utter_TransportCharge
+- utter_TransportResign
+- utter_TransportChangeLocation
+- utter_TransportRoutes
+- utter_TransportAddressChange
+- utter_TransportLateEvening
+- utter_TransportOwn
+- utter_TransportTiming
+- utter_default
+- utter_TransportOwnTransport
+- utter_deny
